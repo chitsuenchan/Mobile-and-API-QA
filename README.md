@@ -75,4 +75,5 @@ Executing Pytest will make it read the test_suite.py which contains the automate
 
 ## Example of results
 
-![my screenshot](./example_executed.png)
+![my screenshot](./example_executed.PNG)
+
