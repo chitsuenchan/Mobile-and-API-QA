@@ -56,7 +56,7 @@ This corresponds to Task One where it checks the mobile navigation to 9-Day Fore
 1. Launch the Hong Kong Observatory App
 2. Click on the pop-ups to remove them
 3. Select the navigation menu and select the 9-Day Forecast
-4. Assert that we are on the 9-Day Forecast page by looking for the page title
+4. Assert the content for tomorrow's forecast is above 0 in length
 
 #### Test Two
 This corresponds to Task Two where it checks the Hong Kong Observatory API in particular the 9-Day Forecast and we are able to extract the relative humidity. The steps for this test are:
