@@ -1,4 +1,4 @@
-# Mobile and API Testing Challenge
+# Mobile and API Testing
 
 **Table of Contents**
 - [Introduction](#introduction)
@@ -97,4 +97,4 @@ Executing Pytest will make it read the test_suite.py which contains the automate
 5. Pytest will return the results in the command window
 
 ## Example of results
-![my screenshot](./example_executed.PNG)
+![my screenshot](.Resources/example_executed.PNG)
