@@ -11,8 +11,8 @@
 
 ## Introduction <a name="introduction"></a>
 Project contains two tests for the Hong Kong Obseratory mobile application. These tests are:
-* Checking the information on the front-end is correct
-* Checking the API returned data is correct 
+* Check the weather information on the front-end is correct
+* Check the API returned data is correct 
 
 ## Motivation <a name="motivation"></a>
 This is a personal learning project aimed to further improve my automated testing knowledge.
