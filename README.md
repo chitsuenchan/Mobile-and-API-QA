@@ -1,4 +1,5 @@
 # Mobile and API Testing
+![my screenshot](Resources/readme-qa-image.jpg)
 
 **Table of Contents**
 - [Introduction](#introduction)
@@ -48,7 +49,7 @@ This will check if the information on the 9-Day Forecast activity window is as e
 3. Select the navigation menu and select the 9-Day Forecast
 4. Assert the content for tomorrow's forecast is above 0 in length
 
-![my screenshot](./example.png)
+![my screenshot](Resources/example.png)
 
 ### Test 2
 This will check if the API is 200 OK and as expected. The steps are:
@@ -97,4 +98,4 @@ Executing Pytest will make it read the test_suite.py which contains the automate
 5. Pytest will return the results in the command window
 
 ## Example of results
-![my screenshot](.Resources/example_executed.PNG)
+![my screenshot](Resources/example_executed.PNG)
