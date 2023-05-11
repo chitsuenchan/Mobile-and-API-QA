@@ -1,7 +1,6 @@
 # Mobile and API Testing Challenge
 
-## Table of Contents
-
+**Table of Contents**
 - [Introduction](#introduction)
 - [Motivation](#motivation)
 - [Technology Used](#technologyUsed)
@@ -61,7 +60,7 @@ This will check if the API is 200 OK and as expected. The steps are:
 
 # Installation <a name="installation"></a>
 
-## Pre-requisites
+**Pre-requisites**
 * [Appium installed](https://appium.io/docs/en/about-appium/getting-started/?lang=en) - the webserver used to execute commands on a mobile device
 * Samsung S20 (or emulate S20 device from Android Studios)
 
