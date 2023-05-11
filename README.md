@@ -1,16 +1,14 @@
 # Mobile and API Testing Challenge
 
-##### Table of Contents  
-[Headers](#headers)  
-[Emphasis](#emphasis)  
-...snip...    
-<a name="headers"/>
-
 ## Table of Contents
 
 - [Introduction](#introduction)
 - [Motivation](#motivation)
-
+- [Technology Used](#technologyUsed)
+- [Build Status](#buildStatus)
+- [Features](#features)
+- [Installation](#installation)
+- [Execution](#execution)
 
 ## Introduction <a name="introduction"></a>
 Project contains two tests for the Hong Kong Obseratory mobile application. These tests are:
@@ -20,7 +18,7 @@ Project contains two tests for the Hong Kong Obseratory mobile application. Thes
 ## Motivation <a name="motivation"></a>
 This is a personal learning project aimed to further improve my automated testing knowledge.
 
-## Technology Used
+## Technology Used <a name="technologyUsed"></a>
 <table>
   <tbody>
     <tr>
@@ -38,10 +36,10 @@ This is a personal learning project aimed to further improve my automated testin
   </tbody>
 </table>
 
-## Build Status
+## Build Status <a name="buildStatus"></a>
 Project is completed.
 
-## Features
+## Features <a name="features"></a>
 This project contains 2 automated tests. First is for the front-end and second is for the API data.
 
 ### Test 1
@@ -61,7 +59,7 @@ This will check if the API is 200 OK and as expected. The steps are:
 4. Extract the relative humidity (e.g., 60 - 85%) for the day after tomorrow from the API response (e.g. if today is Monday, then extract the relative humidity for Wednesday)
 
 
-# Installation
+# Installation <a name="installation"></a>
 
 ## Pre-requisites
 * [Appium installed](https://appium.io/docs/en/about-appium/getting-started/?lang=en) - the webserver used to execute commands on a mobile device
@@ -93,7 +91,7 @@ desired_cap = {
     'appWaitActivity': ''
 }
 ```
-# How to use?
+# Execution <a name="execution"></a>
 Executing Pytest will make it read the test_suite.py which contains the automated test cases and run the testing suite. The steps to execute Pytest are: 
 1. Open the Windows Command Line
 2. Execute $pytest
@@ -101,57 +99,6 @@ Executing Pytest will make it read the test_suite.py which contains the automate
 
 ## Example of results
 ![my screenshot](./example_executed.PNG)
-
-
-
-This repository contains python scripts for two automated tests for tasks below. Pytest is used as the testing framework and Appium is used for the mobile automation. The mobile testing will be done through connecting to a real Samsung S20 device and executed using a Windows 10 machine.
-
-### Task 1
-Create an automated test case to check tomorrow forecast from 9-day forecast screen in the Hong Kong Observatory App.
-
-![my screenshot](./example.png)
-
-### Task 2
-Use the 9-day forecast API from the Hong Kong Observatory to:
-1. Capture the related API endpoint
-2. Send a request using this API endpoint
-3. Test the request response status is whether successful or not
-4. Extract the relative humidity (e.g., 60 - 85%) for the day after tomorrow from the API response (e.g. if today is Monday, then extract the relative humidity for Wednesday)
-
-
-
-Ensure you have the following:
-* [Appium installed](https://appium.io/docs/en/about-appium/getting-started/?lang=en) - the webserver used to execute commands on a mobile device
-* Windows 10 operating system
-* Samsung S20 (or emulate S20 device from Android Studios)
-
-## Setting up the test environment
-1. Download the MyObservatory app APK - [Link here](https://m.apkpure.com/myobservatory-%E6%88%91%E7%9A%84%E5%A4%A9%E6%96%87%E5%8F%B0/hko.MyObservatory_v1_0)
-2. Place the APK in the base directory
-3. Open up the Command Line in the base directory
-4. Run the code below to install package dependencies 
-```python
-pip install -r requirements.txt
-```
-
-
-## Running the tests
-### Description of the automated tests and their steps
-#### Test One
-This corresponds to Task One where it checks the mobile navigation to 9-Day Forecast page using an Samsung S20 device. The steps for this test are:
-1. Launch the Hong Kong Observatory App
-2. Click on the pop-ups to remove them
-3. Select the navigation menu and select the 9-Day Forecast
-4. Assert the content for tomorrow's forecast is above 0 in length
-
-#### Test Two
-This corresponds to Task Two where it checks the Hong Kong Observatory API in particular the 9-Day Forecast and we are able to extract the relative humidity. The steps for this test are:
-1. Create a GET request to the Hong Kong Observatory using the parameters 'dataType': 'fnd' and 'lang': 'en'
-2. Assert that the response is 200 (OK)
-3. Extract the minimum and maximum relative humidity 
-4. Assert that minimum relative humidity is zero or above
-5. Assert that maximum relative humidity is the minimum relative humidity or above 
-
 ### Executing Pytest
 
 
